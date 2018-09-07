@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>KT28's Winemaking</name>
+	<author>KT28</author>
+	<targetVersion>0.19.2017</targetVersion>
+	<description>
+    Adds winemaking to the game.
+	</description>
+</ModMetaData>
