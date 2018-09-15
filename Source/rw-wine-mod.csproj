@@ -65,7 +65,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartAction>Program</StartAction>
-    <StartProgram>$(SolutionDir)\rw-install\RimWorldWin64.exe</StartProgram>
+    <StartProgram>$(SolutionDir)rw-install\RimWorldWin64.exe</StartProgram>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>echo F|xcopy "$(ProjectDir)..\About\About-$(ConfigurationName).xml" "$(TargetDir)..\About\About.xml" /C /Y /K /Q /D

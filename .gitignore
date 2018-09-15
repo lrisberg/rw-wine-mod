@@ -12,6 +12,8 @@ Assemblies/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+# Visual Studio
+*.csproj.user
 
 # Build results
 [Dd]ebug/
