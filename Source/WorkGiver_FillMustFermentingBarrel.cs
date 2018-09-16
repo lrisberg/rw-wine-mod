@@ -75,7 +75,7 @@ namespace RwWineMod
     {
       Building_FermentingBarrel barrel = (Building_FermentingBarrel)t;
       Thing t2 = this.FindMust(pawn, barrel);
-      return new Job(JobDefOf.FillMustFermentingBarrel, t, t2);
+      return new Job(WineJobDefOf.FillMustFermentingBarrel, t, t2);
     }
     
     private Thing FindMust(Pawn pawn, Building_FermentingBarrel barrel)
@@ -83,7 +83,7 @@ namespace RwWineMod
       Predicate<Thing> predicate = (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false);
       IntVec3 position = pawn.Position;
       Map map = pawn.Map;
-      ThingRequest thingReq = ThingRequest.ForDef(ThingDefOf.Must);
+      ThingRequest thingReq = ThingRequest.ForDef(WineThingDefOf.Must);
       PathEndMode peMode = PathEndMode.ClosestTouch;
       TraverseParms traverseParams = TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, false);
       Predicate<Thing> validator = predicate;

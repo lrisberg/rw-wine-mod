@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
+using RimWorld;
 using RimWorld.BaseGen;
 
 namespace RwWineMod
@@ -29,7 +30,7 @@ namespace RwWineMod
       float progress = Rand.Range(0.1f, 0.9f);
       for (int j = 0; j < SymbolResolver_AddMustToFermentingBarrels.barrels.Count; j++)
       {
-        if (!SymbolResolver_AdMustToFermentingBarrels.barrels[j].Fermented)
+        if (!SymbolResolver_AddMustToFermentingBarrels.barrels[j].Fermented)
         {
           int num = Rand.RangeInclusive(1, 25);
           num = Mathf.Min(num, SymbolResolver_AddMustToFermentingBarrels.barrels[j].SpaceLeftForWort);

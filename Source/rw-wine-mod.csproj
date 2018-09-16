@@ -56,7 +56,12 @@
     <None Include="..\Patches\**" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WineJobDefOf.cs" />
+    <Compile Include="WineThingDefOf.cs" />
+    <Compile Include="JobDriver_FillMustFermentingBarrel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SymbolResolver_AddMustToFermentingBarrels.cs" />
+    <Compile Include="WorkGiver_FillMustFermentingBarrel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
