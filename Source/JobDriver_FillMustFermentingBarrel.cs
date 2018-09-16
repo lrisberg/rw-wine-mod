@@ -6,11 +6,8 @@ using RimWorld;
 
 namespace RwWineMod
 {
-  // Token: 0x02000068 RID: 104
   public class JobDriver_FillMustFermentingBarrel : JobDriver
   {
-    // Token: 0x17000097 RID: 151
-    // (get) Token: 0x060002E7 RID: 743 RVA: 0x0001C770 File Offset: 0x0001AB70
     protected Building_FermentingBarrel Barrel
     {
       get
@@ -18,9 +15,7 @@ namespace RwWineMod
         return (Building_FermentingBarrel)this.job.GetTarget(TargetIndex.A).Thing;
       }
     }
-
-    // Token: 0x17000098 RID: 152
-    // (get) Token: 0x060002E8 RID: 744 RVA: 0x0001C798 File Offset: 0x0001AB98
+    
     protected Thing Must
     {
       get
@@ -28,8 +23,7 @@ namespace RwWineMod
         return this.job.GetTarget(TargetIndex.B).Thing;
       }
     }
-
-    // Token: 0x060002E9 RID: 745 RVA: 0x0001C7BC File Offset: 0x0001ABBC
+    
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {
       Pawn pawn = this.pawn;
@@ -49,8 +43,7 @@ namespace RwWineMod
       }
       return result;
     }
-
-    // Token: 0x060002EA RID: 746 RVA: 0x0001C824 File Offset: 0x0001AC24
+    
     protected override IEnumerable<Toil> MakeNewToils()
     {
       this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
@@ -77,14 +70,11 @@ namespace RwWineMod
       };
       yield break;
     }
-
-    // Token: 0x0400020C RID: 524
+    
     private const TargetIndex BarrelInd = TargetIndex.A;
-
-    // Token: 0x0400020D RID: 525
+    
     private const TargetIndex MustInd = TargetIndex.B;
-
-    // Token: 0x0400020E RID: 526
+    
     private const int Duration = 200;
   }
 }
