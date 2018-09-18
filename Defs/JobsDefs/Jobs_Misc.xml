@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <JobDef>
+    <defName>FillMustFermentingBarrel</defName>
+    <driverClass>RwWineMod.JobDriver_FillMustFermentingBarrel</driverClass>
+    <reportString>filling TargetA.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>

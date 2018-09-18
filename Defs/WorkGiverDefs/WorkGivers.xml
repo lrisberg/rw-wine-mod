@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <WorkGiverDef>
+    <defName>FillMustFermentingBarrel</defName>
+    <label>fill fermenting barrels with must</label>
+    <giverClass>RwWineMod.WorkGiver_FillMustFermentingBarrel</giverClass>
+    <workType>Hauling</workType>
+    <verb>fill</verb>
+    <gerund>filling</gerund>
+    <priorityInType>18</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>
